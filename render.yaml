@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: posture-backend
+    env: python
+    repo: https://github.com/spati10/posture-detection-app
+    branch: master
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "python backend/app.py"
+    envVars:
+      - key: FLASK_ENV
+        value: development
+
+  - type: web
+    name: posture-frontend
+    env: static
+    repo: https://github.com/spati10/posture-detection-app
+    branch: master
+    buildCommand: "cd frontend && npm install && npm run build"
+    staticPublishPath: frontend/build
