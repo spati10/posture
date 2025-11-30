@@ -29,18 +29,17 @@ cd frontend npm install npm start
 
 📡API Endpoints: POST /posture – Analyze a single webcam frame.
 
-POST /analyze – Analyze a full video file.
+
 
 🔍 Tech Stack: Frontend: React, react-webcam, Axios.
 
-Backend: Flask, Flask-CORS, OpenCV, MediaPipe.
+Backend: Flask,  OpenCV, MediaPipe.
 
-Video Analysis: MediaPipe Pose, NumPy, math.
+Video Analysis: MediaPipe .
 
-📌 Deployment Frontend: Vercel / Netlify / Render
 
-Backend: Render / Railway / Replit
 
+Backend: Render
 🧠 Future Improvements: Real-time video streaming support.
 
 Pose history & analytics.
